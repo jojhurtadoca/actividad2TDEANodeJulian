@@ -16,7 +16,7 @@ Copiaremos en la consola (cmd o terminal de Git), "nodemon src/app -e js,hbs".
 
 Para Finalizar el servidor: 
 ----------------------------
-Copiaremos en la consola (cmd o terminal de Git), "nodemon src/app -e js,hbs".
+Copiaremos en la consola (cmd o terminal de Git), Control + c, digitamos la tecla S y damos enter.
 
 Para más detalles de uso: 
 ----------------------------
