@@ -1,0 +1,53 @@
+{{>header}}
+<div class="row">
+    <div class="card shadowStyle">
+        <div class="card-body">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <h2>Ver cursos como Administrador</h2>
+                {{{listarcursos}}}
+                <hr class="my-3">
+                <h2>Ver cursos como Interesado</h2>
+                <script>
+                    var lista = {{{listarcursosdetalle}}};
+                </script>
+                <div class="col-xs-12 col-md-6 col-lg-6">
+                    <div class="form-group">
+                        <label for="idCurso">Seleccione el curso</label>
+                        <select class="form-control" id="idCurso" name="idCurso">
+                        </select>
+                    </div>
+                    <div class="col-xs-12 col-md-12 col-lg-12" align="center">
+                        <button type="button" id="verDetalleCurso" class="btn btn-success">Ver detalle</button>
+                    </div>
+                </div>
+                
+            </div> 
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="modalDetalle" tabindex="-1" role="dialog" aria-labelledby="modalDetalle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="modalDetalleTitulo"></h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="displayInline"><span class="spanTitle">Id: </span><p class="displayInline" id="id"></p></p>
+        <p class="displayInline"><span class="spanTitle">Nombre: </span><p class="displayInline" id="nombre"></p></p>
+        <p class="displayInline"><span class="spanTitle">Modalidad: </span><p class="displayInline" id="modalidad"></p></p>
+        <p class="displayInline"><span class="spanTitle">Disponible: </span><p class="displayInline" id="disponible"></p></p>
+        <p class="displayInline"><span class="spanTitle">Valor: </span><p class="displayInline" id="valor"></p></p>
+        <p class="displayInline"><span class="spanTitle">Descripción: </span><p class="displayInline" id="descripcion"></p></p>
+        <p class="displayInline"><span class="spanTitle">Intensidad: </span><p class="displayInline" id="intensidad"></p></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+{{>footer}}

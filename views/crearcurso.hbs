@@ -1,0 +1,63 @@
+{{>header}}
+<div class="row">
+    <div class="card shadowStyle" align="center">
+        <div class="card-body">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <div align="center">
+                    <h2 class="card-title">Formulario para Ingresar un nuevo Curso</h2>
+                </div>
+                <form action="/crear" method="post">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label for="id">Id<p class="itemRequired">*</p></label>
+                                <input type="number" name="id" class="form-control" id="id" placeholder="Ingrese id de curso" required>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label for="nombre">Nombre<p class="itemRequired">*</p></label>
+                                <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Ingrese el nombre del curso" required>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label for="modalidad">Modalidad</label>
+                                <select class="form-control" id="modalidad" name="modalidad">
+                                    <option value=""></option>
+                                    <option value="Presencial">Presencial</option>
+                                    <option value="Virtual">Virtual</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label for="valor">Valor<p class="itemRequired">*</p></label>
+                                <input type="number" name="valor" class="form-control" id="valor" placeholder="Ingrese el valor del curso" required>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label for="descripcion">Descripción<p class="itemRequired">*</p></label>
+                                <input type="text" name="descripcion" class="form-control" id="descripcion" placeholder="Ingrese la descripción del curso" required>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label for="intensidad">Intensidad (Horas)</label>
+                                <input type="number" name="intensidad" class="form-control" id="intensidad" placeholder="Ingrese la intensidad horaria del curso">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-12 col-lg-12" align="center">
+                            <button type="submit" class="btn btn-success">Crear curso</button>
+                        </div>
+                        <div class="col-xs-12 col-md-12 col-lg-12" align="left">
+                            <p><p class="itemRequired">*</p> Requerido</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{{>footer}}

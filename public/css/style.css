@@ -1,0 +1,110 @@
+.footerStyle{
+    bottom: 0;
+    padding: 1rem 0 !important;
+    border-top: 1px solid #d4d3d3;
+}
+
+@media screen and (min-width: 768px) {
+    #imgTdea{
+        margin-bottom:-30px;
+    }
+
+    .footerStyle{
+        width: calc(100% - 300px);
+    }
+
+    #imgAntioquia{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #imgAntioquia{
+        width: 300px;
+        margin-left: 3%;
+    }
+
+    .footerStyle{
+        width: 100%;
+    }
+}
+
+#currentYear{
+    display: inline;
+}
+
+.headerTdea{
+    background: linear-gradient(87deg, #006732 0, #8dc109 100%) !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.img100{
+    width: 100%;
+}
+
+.displayInline{
+    display: inline;
+}
+
+.navbar-vertical {
+    box-shadow: 0 0 2rem 0 rgba(136, 152, 170, .75) !important;
+}
+
+.shadowStyle{
+    box-shadow: 0 0 2rem 0 rgba(136, 152, 170, .75) !important;
+}
+
+.card{
+    margin-left:15px;
+    width: 100%;
+}
+
+.itemRequired{
+    color:red;
+    display: inline;
+}
+
+label{
+    float: left;
+}
+
+input,select{
+    border-color:#bbb7b7 !important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    opacity: 1 !important; /* Firefox */
+    color:gray !important;
+}
+
+input, select, textarea{
+    color: black !important;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #006732;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #8dc109;
+}
+
+.colorwhite{
+    color: white;
+}
+
+.spanTitle{
+    font-weight: 600;
+}
+
+.modal-body{
+    font-size: 12px;
+}
+
+.modal-header{
+    border-bottom: 1px solid #e7ebef !important;
+}
+  

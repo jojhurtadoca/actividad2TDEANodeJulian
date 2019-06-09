@@ -1,0 +1,58 @@
+{{>header}}
+<div class="row">
+    <div class="card shadowStyle" align="center">
+        <div class="card-body">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <div align="center">
+                    <h2 class="card-title">Formulario para Ingresar un nuevo estudiante a un curso</h2>
+                </div>
+                <form action="/inscribirest" method="post">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label for="id">Cédula<p class="itemRequired">*</p></label>
+                                <input type="number" name="cedula" class="form-control" id="cedula" placeholder="Ingrese su cédula" required>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label for="nombre">Nombre<p class="itemRequired">*</p></label>
+                                <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label for="correo">Email<p class="itemRequired">*</p></label>
+                                <input type="email" name="correo" class="form-control" id="correo" placeholder="Ingrese su correo electrónico" required>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label for="telefono">Teléfono<p class="itemRequired">*</p></label>
+                                <input type="number" name="telefono" class="form-control" id="telefono" placeholder="Ingrese su número de teléfono" required>
+                            </div>
+                        </div>
+                        <script>
+                            var lista = {{{listarcursosdetalle}}};
+                        </script>
+                        <div class="col-xs-12 col-md-12 col-lg-12">
+                            <div class="form-group">
+                                <label for="idCurso">Seleccione el curso<p class="itemRequired">*</p></label>
+                                <select class="form-control" id="idCurso" name="idCurso" required>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-12 col-lg-12" align="center">
+                            <button type="submit" class="btn btn-success">Inscribir Estudiante</button>
+                        </div>
+                        <div class="col-xs-12 col-md-12 col-lg-12" align="left">
+                            <p><p class="itemRequired">*</p> Requerido</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{{>footer}}
